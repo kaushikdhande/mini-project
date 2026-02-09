@@ -1,73 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Seller Dashboard</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <link rel="stylesheet" href="index1.css">
+
 <body>
-  <div class="container" id="loginSection">
-    <h2>Login</h2>
-    <input type="text" id="username" placeholder="Username"/><br>
-    <input type="password" id="password" placeholder="Password"/><br>
-    <button onclick="login()">Login</button>
-    <p id="loginError" style="color:red;"></p>
-  </div>
-
-  <div class="container hidden" id="dashboardSection">
-    <button id="logoutBtn" onclick="logout()">Logout</button>
-    <h2 id="sellerTitle">Welcome</h2>
-
-    <div id="sellerControls" class="hidden">
-      <h3>Add New Entry</h3>
-      <div class="form-row">
-        <input type="date" id="entryDate" />
-        <input type="number" id="entryRevenue" placeholder="Revenue" />
-        <input type="number" id="entryExpenses" placeholder="Expenses" />
-        <button onclick="addEntry()">Add Entry</button>
-      </div>
+    <div class="welcome-container">
+        <h1>Welcome to Mini Account Handler</h1>
+        <p>Manage your accounts efficiently and securely.</p>
+        <a href="/index11.html"><button>Get Started</button></a>
     </div>
-
-    <div id="adminControls" class="hidden">
-      <label>Select Seller: </label>
-      <select id="sellerSelector" onchange="renderAdminTables()"></select>
-    </div>
-
-    <h3>Monthly Summary</h3>
-    <table id="monthlyTable">
-      <thead>
-        <tr><th>Month</th><th>Revenue</th><th>Expenses</th><th>Profit</th></tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-
-    <h3>Day-wise Data</h3>
-    <label>Select Month: </label>
-    <select id="monthSelector" onchange="renderDayTable()">
-      <option value="0">Jan</option>
-      <option value="1">Feb</option>
-      <option value="2">Mar</option>
-      <option value="3">Apr</option>
-      <option value="4">May</option>
-      <option value="5">Jun</option>
-      <option value="6">Jul</option>
-      <option value="7">Aug</option>
-      <option value="8">Sep</option>
-      <option value="9">Oct</option>
-      <option value="10">Nov</option>
-      <option value="11">Dec</option>
-    </select>
-
-    <table id="dayTable">
-      <thead>
-        <tr><th>Date</th><th>Revenue</th><th>Expenses</th><th>Profit</th></tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
-
-  <script src="script.js"></script>
-
 </body>
+</head>
 </html>

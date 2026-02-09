@@ -1,13 +1,15 @@
 const users = {
     "seller1": "1234",
     "seller2": "5678",
+    "seller3":"0987",
     "admin": "admin123"
   };
 
   let currentUser = null;
   let sellerData = {
     seller1: [],
-    seller2: []
+    seller2: [],
+    seller3: []
   };
 
   function login() {
